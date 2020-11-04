@@ -1,0 +1,44 @@
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+/* default browser reset  */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/* end of default browser reset */
+/* ======================== */
+/* main colors */
+
+:root{
+/* main colors */
+--softBlue: hsl(231, 69%, 60%);
+--softRed: hsl(0, 94%, 66%);
+ /* Neutral */
+--grayishBlue: hsl(229, 8%, 60%);
+--veryDarkBlue: hsl(229, 31%, 21%);
+--mainTransition:0.3s all linear;
+--mainSpacing:0.1rem;
+}
+/* end of main colors  */
+/* html scroll behaviour  */
+html{
+    scroll-behavior: smooth;
+}
+/* styles for body */
+body{
+    font-family: 'Rubik', sans-serif;
+    /* width:100%; */
+}
+.nav-link a {
+    text-decoration:none;
+    color:var(--grayishBlue)
+}
+/* styles for main container */
+.main-container{
+    width:1366px;
+    max-width:100%;
+    margin:0 auto;
+}
+/*end of styles for main container */
