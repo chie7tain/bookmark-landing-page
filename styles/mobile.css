@@ -1,0 +1,20 @@
+@media only screen and (max-width:400px){
+  body{
+    overflow-x: hidden;
+  }
+  /* styles for nav bar */
+  .main-container{
+    width:100%;
+  }
+  nav{
+    width:100%;
+  }
+  .nav-bar{
+    display: flex;
+    justify-content: space-around;
+    width:100%;
+    border:1px solid ;
+  }
+  /* end of styles for nav bar */
+  /* end of styles for the mobile view for the design */
+}

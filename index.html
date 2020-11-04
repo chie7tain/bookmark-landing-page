@@ -2,19 +2,303 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
   <title>Frontend Mentor | Bookmark landing page</title>
+<!-- font awesome -->
+<script src="https://kit.fontawesome.com/52f2afaff9.js" crossorigin="anonymous"></script>
+<!--end of font awesome  -->
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+<!-- styles -->
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="./styles/mobile.css">
+<link rel="stylesheet" href="./styles/tablet.css">
+<link rel="stylesheet" href="./styles/desktop.css">
+<!-- end of styles  -->
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <!-- main container -->
+  <section class="main-container">
+    <!-- ======================== -->
+    <!-- nav bar -->
+    <nav class="nav-bar">
+      <div class="logo-container">
+        <img src="./images/logo-bookmark.svg" alt="company logo" class="logo-img">
+      </div>
+      <!-- nav links proper -->
+      <div class="navigation">
+        <div class="nav-link">
+          <a href="#features">features</a>
+        </div>
+        <div class="nav-link">
+          <a href="#pricing">pricing</a>
+        </div>
+        <div class="nav-link">
+          <a href="#contact">contact</a>
+        </div>
+        <button class="login-btn"><a href="#">login</a></button>
+      </div>
+    </nav>
+    <!-- end of nav bar -->
+    <!-- =========================== -->
+    <!-- hero section-->
+    <section class="hero-and-hero-background-image-section">
+      <div class="hero-container">
+        <div class="hero-heading-container">
+          <h1>A Simple Bookmark Manager</h1>
+        </div>
+        <div class="hero-text-container">
+          <p class="hero-text">
+            A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.
+          </p>
+        </div>
+        <div class="hero-btns-container">
+          <button class="get-it-on-chrome-btn">Get It on Chrome</button>
+          <button class="get-it-on-firefox">Get It on Firefox</button>
+        </div>
+      </div>
+      <div class="hero-background-image-container">
+        <div class="hero-illustration-container">
+          <img src="./images/illustration-hero.svg" alt="image of desktop" class="hero-illustration desktop-img">
+        </div>
+        <div class="hero-background">
+
+        </div>
+      </div>
+    </section>
+    <!-- end of hero section -->
+    <!-- ============================== -->
+    <!-- features section -->
+    <!-- <section id="features" class="features-section">
+      <div class="features-banner-container">
+        <h2 class="banner-heading">features</h2>
+        <p class="banner-text">
+          Our aim is to make it quick and easy for you to access your favourite websites. Your boomarks sync between your devices so you can access them on the go.
+        </p>
+      </div>
+      <div class="features-tabs-container">
+        <div class="tablink"><a href="">Simple Bookmarking</a></div>
+        <div class="tablink"><a href="">Speedy Searching</a></div>
+        <div class="tablink"><a href="">Easy Sharing</a></div>
+      </div>
+      <div id="tab-content-container">
+        <!-- simple bookmarking feature content -->
+        <div class="content" id="simple-bookmark">
+          <div class="desktop-image-and-background-container">
+            <img src="./images/illustration-features-tab-1.svg" alt="features image one" class="illustration-img">
+          </div>
+          <div class="features-image-background"></div>
+          <!-- ============== -->
+          <div class="features-banner-container">
+            <h2 class="feature-heading">Bookmark in one click</h2>
+            <p class="feature-text">
+              Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.
+            </p>
+            <button class="feature-btn">More Info</button>
+          </div>
+        </div>
+        <!-- Speedy searching feature -->
+        <div class="content" id="speedy-searching">
+          <div class="desktop-image-and-background-container">
+            <img src="./images/illustration-features-tab-2.svg" alt="features image two" class="illustration-img">
+          </div>
+          <div class="features-image-background"></div>
+          <!-- ============== -->
+          <div class="features-banner-container">
+            <h2 class="feature-heading">Search Efficiently</h2>
+            <p class="feature-text">
+              Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.
+            </p>
+            <button class="feature-btn">More Info</button>
+          </div>
+        </div>
+<!-- Easy Sharing feature-->
+        <div class="content" id="easy-sharing">
+          <div class="desktop-image-and-background-container">
+            <img src="./images/illustration-features-tab-3.svg" alt="features image one" class="illustration-img">
+          </div>
+          <div class="features-image-background"></div>
+          <!-- ============== -->
+          <div class="features-banner-container">
+            <h2 class="feature-heading">Easy Sharing</h2>
+            <p class="feature-text">
+              Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.
+            </p>
+            <button class="feature-btn">More Info</button>
+          </div>
+        </div>
+      </div>
+    </section> -->
+<!-- end of features section  -->
+<!-- ============================= -->
+<!-- downloan extension container -->
+<section class="download-extention-section">
+  <h2 class="download-extension-heading">Download the extension</h2>
+  <p class="download-extension-container-text">
+    We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to priotize.
+  </p>
+  <div class="extensions-container">
+    <div class="extension" id="chrome-extension">
+      <div class="extension-image-container">
+        <img src="./images/logo-chrome.svg" alt="image of chrome browser logo>
+      </div>
+      <div class="extension-title-container">
+        <h3 class="extension-title">Add to Chrome</h3>
+        <p class="extension-version">Minimum version 62</p>
+      </div>
+      <div class="add-extension-btn-container">
+        <button class="add-extension-btn">
+          Add & Install Extension
+        </button>
+      </div>
+    </div>
+    <div class="extension" id="firefox-extension">
+      <div class="extension-image-container">
+        <img src="./images/logo-firefox.svg" alt="image of firefox browser logo>
+      </div>
+      <div class="extension-title-container">
+        <h3 class="extension-title">Add to Firefox</h3>
+        <p class="extension-version">Minimum version 55</p>
+      </div>
+      <div class="add-extension-btn-container">
+        <button class="add-extension-btn">
+          Add & Install Extension
+        </button>
+      </div>
+    </div>
+    <div class="extension" id="opera-extension">
+      <div class="extension-image-container">
+        <img src="./images/logo-opera.svg" alt="image of opera browser logo>
+      </div>
+      <div class="extension-title-container">
+        <h3 class="extension-title">Add to Opera</h3>
+        <p class="extension-version">Minimum version 46</p>
+      </div>
+      <div class="add-extension-btn-container">
+        <button class="add-extension-btn">
+          Add & Install Extension
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end of download extensions container -->
+<!-- ============================= -->
+<!-- FAQ section -->
+<section class="frequently-asked-questions-section">
+  <div class="faq-banner-container">
+    <h2 class="faq-banner-heading">Frequently Asked Questions</h2>
+    <p class="faq-banner-text">
+      Here are some of our FAQs. If you have any other questions you'd like answered please feel to email us.
+    </p>
+  </div>
+  <div class="faq-questions-container">
+    <!-- individual faqs -->
+    <div class="faq">
+      <div class="faq-heading-container">
+        <h3 class="faq-heading">
+          What is Bookmark?
+        </h3>
+        <span class="details-icon-container">
+          <img src="./images/icon-arrow.svg" alt="arrow icon" class="icon-arrow">
+        </span>
+      </div>
+      <p class="faq-text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum eveniet, autem nemo similique perferendis commodi labore eligendi veniam quaerat sequi corrupti aut consequatur dolor, distinctio exercitationem obcaecati consectetur, quos officiis.
+      </p>
+    </div>
+    <div class="faq">
+      <div class="faq-heading-container">
+        <h3 class="faq-heading">How can i request a new browser ?
+        </h3>
+        <span class="details-icon-container">
+          <img src="./images/icon-arrow.svg" alt="arrow icon" class="icon-arrow">
+        </span>
+      </div>
+      <p class="faq-text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima asperiores eaque esse cupiditate quasi quos, omnis magni at labore quas recusandae consequatur laudantium ratione magnam voluptatem explicabo earum incidunt ipsam.
+      </p>
+    </div>
+    <div class="faq">
+      <div class="faq-heading-container">
+        <h3 class="faq-heading">Is there a mobile app?
+        </h3>
+        <span class="details-icon-container">
+          <img src="./images/icon-arrow.svg" alt="arrow icon" class="icon-arrow">
+        </span>
+      </div>
+      <p class="faq-text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, possimus et. Neque, nostrum vel quia nesciunt possimus natus voluptatum autem, at non ea earum obcaecati inventore deleniti, nam officia molestias!
+      </p>
+    </div>
+    <div class="faq">
+      <div class="faq-heading-container">
+        <h3 class="faq-heading">What about other Chromium browsers?
+        </h3>
+        <span class="details-icon-container">
+          <img src="./images/icon-arrow.svg" alt="arrow icon" class="icon-arrow">
+        </span>
+      </div>
+      <p class="faq-text">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem similique, quia consectetur sed quod asperiores? Dolores quam similique eligendi doloribus minus optio aperiam unde deleniti? Labore sint temporibus facilis soluta.
+      </p>
+    </div>
+  </div>
+  <div class="more-info-btn-container">
+    <button class="more-info-btn">More Info</button>
+  </div>
+</section>
+<!-- end of FAQ section -->
+<!-- ==================================== -->
+<!-- footer section -->
+<section class="footer-section">
+  <div class="contact-us-container">
+    <div class="footer-banner-container">
+      <p class="footer-banner-text">35,000 + already joined</p>
+      <h4 class="footer-banner-header">
+        Stay up-to-date with what we're doing
+      </h4>
+    </div>
+    <form action="" class="contact-us-form">
+      <input type="text" placeholder="example@email.com">
+      <div class="contact-us-btn-container">
+        <button class="contact-us-btn">Contact Us</button>
+      </div>
+    </form>
+  </div>
+  <div class="footer-links-container">
+    <div class="footer-logo">
+      <img src="./images/logo-bookmark.svg" alt="company logo">
+    </div>
+    <div class="links-container">
+      <div class="footer-link">
+        <a href="#features">Features</a>
+      </div>
+      <div class="footer-link">
+        <a href="#Pricing">Pricing</a>
+      </div>
+      <div class="footer-link">
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+    <div class="social-links-container">
+      <span class="social-link">
+        <i class="fab fa-facebook-square"></i>
+      </span>
+      <span class="social-link">
+        <i class="fab fa-twitter"></i>
+      </span>
+    </div>
+  </div>
+</section>
+<!-- end of footer section -->
+  </section>
+<!-- end of main container -->
+
+
 
 
   <footer>
