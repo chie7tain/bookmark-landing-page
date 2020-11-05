@@ -1,5 +1,7 @@
 @media only screen and (min-width:961px){
-  nav{
-    border:1px solid red;;
+  /* this ensures that the responsive burger toggle button does not show in the desktop mode */
+  .burger{
+    display:none;
   }
+
 }

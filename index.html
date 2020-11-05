@@ -30,16 +30,30 @@
       </div>
       <!-- nav links proper -->
       <div class="navigation">
-        <div class="nav-link">
+        <div class="nav-link seperate-border">
           <a href="#features">features</a>
         </div>
         <div class="nav-link">
           <a href="#pricing">pricing</a>
         </div>
-        <div class="nav-link">
+        <div class="nav-link seperate-border">
           <a href="#contact">contact</a>
         </div>
-        <button class="login-btn"><a href="#">login</a></button>
+        <button class="login-btn nav-link"><a href="#">login</a></button>
+        <div class="social-links-container-nav">
+          <span class="social-link-nav">
+            <i class="fab fa-facebook-square"></i>
+          </span>
+          <span class="social-link-nav">
+            <i class="fab fa-twitter"></i>
+          </span>
+        </div>
+      </div>
+      <!-- responsive burger toggle button -->
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
       </div>
     </nav>
     <!-- end of nav bar -->
@@ -48,7 +62,7 @@
     <section class="hero-and-hero-background-image-section">
       <div class="hero-container">
         <div class="hero-heading-container">
-          <h1>A Simple Bookmark Manager</h1>
+          <h1 class="hero-heading">A Simple Bookmark Manager</h1>
         </div>
         <div class="hero-text-container">
           <p class="hero-text">
@@ -56,41 +70,41 @@
           </p>
         </div>
         <div class="hero-btns-container">
-          <button class="get-it-on-chrome-btn">Get It on Chrome</button>
-          <button class="get-it-on-firefox">Get It on Firefox</button>
+          <button class="get-it-on-chrome-btn btn">Get It on Chrome</button>
+          <button class="get-it-on-firefox-btn btn">Get It on Firefox</button>
         </div>
       </div>
       <div class="hero-background-image-container">
-        <div class="hero-illustration-container">
-          <img src="./images/illustration-hero.svg" alt="image of desktop" class="hero-illustration desktop-img">
+        <div class="hero-illustration-container container">
+          <img src="./images/illustration-hero.svg" alt="image of desktop" class="hero-illustration-desktop-img image">
         </div>
-        <div class="hero-background">
-
-        </div>
+        <div class="image-background hero"></div>
       </div>
     </section>
     <!-- end of hero section -->
     <!-- ============================== -->
     <!-- features section -->
-    <!-- <section id="features" class="features-section">
+     <section id="features" class="features-section">
       <div class="features-banner-container">
-        <h2 class="banner-heading">features</h2>
-        <p class="banner-text">
+        <h2 class="features-banner-heading">features</h2>
+        <p class="features-banner-text">
           Our aim is to make it quick and easy for you to access your favourite websites. Your boomarks sync between your devices so you can access them on the go.
         </p>
       </div>
-      <div class="features-tabs-container">
-        <div class="tablink"><a href="">Simple Bookmarking</a></div>
-        <div class="tablink"><a href="">Speedy Searching</a></div>
-        <div class="tablink"><a href="">Easy Sharing</a></div>
+      <div class="features-tab-container">
+        <div class="tab-link"><span class="tab">
+          Simple Bookmarking
+        </span></div>
+        <div class="tab-link"><span class="tab">Speedy Searching</span></div>
+        <div class="tab-link"><span class="tab">Easy Sharing</span></div>
       </div>
       <div id="tab-content-container">
         <!-- simple bookmarking feature content -->
         <div class="content" id="simple-bookmark">
-          <div class="desktop-image-and-background-container">
-            <img src="./images/illustration-features-tab-1.svg" alt="features image one" class="illustration-img">
+          <div class="desktop-image-and-background-container container">
+            <img src="./images/illustration-features-tab-1.svg" alt="features image one" class="illustration-img image">
+            <div class="feature-image-background"></div>
           </div>
-          <div class="features-image-background"></div>
           <!-- ============== -->
           <div class="features-banner-container">
             <h2 class="feature-heading">Bookmark in one click</h2>
@@ -102,10 +116,10 @@
         </div>
         <!-- Speedy searching feature -->
         <div class="content" id="speedy-searching">
-          <div class="desktop-image-and-background-container">
-            <img src="./images/illustration-features-tab-2.svg" alt="features image two" class="illustration-img">
+          <div class="desktop-image-and-background-container container">
+            <img src="./images/illustration-features-tab-2.svg" alt="features image two" class="illustration-img image">
+            <div class="image-background feature"></div>
           </div>
-          <div class="features-image-background"></div>
           <!-- ============== -->
           <div class="features-banner-container">
             <h2 class="feature-heading">Search Efficiently</h2>
@@ -117,10 +131,10 @@
         </div>
 <!-- Easy Sharing feature-->
         <div class="content" id="easy-sharing">
-          <div class="desktop-image-and-background-container">
-            <img src="./images/illustration-features-tab-3.svg" alt="features image one" class="illustration-img">
+          <div class="desktop-image-and-background-container container">
+            <img src="./images/illustration-features-tab-3.svg" alt="features image one" class="illustration-img image">
+            <div class="image-background feature"></div>
           </div>
-          <div class="features-image-background"></div>
           <!-- ============== -->
           <div class="features-banner-container">
             <h2 class="feature-heading">Easy Sharing</h2>
@@ -142,7 +156,7 @@
   </p>
   <div class="extensions-container">
     <div class="extension" id="chrome-extension">
-      <div class="extension-image-container">
+      <div class="extension-image-container container">
         <img src="./images/logo-chrome.svg" alt="image of chrome browser logo>
       </div>
       <div class="extension-title-container">
@@ -156,7 +170,7 @@
       </div>
     </div>
     <div class="extension" id="firefox-extension">
-      <div class="extension-image-container">
+      <div class="extension-image-container container">
         <img src="./images/logo-firefox.svg" alt="image of firefox browser logo>
       </div>
       <div class="extension-title-container">
@@ -170,7 +184,7 @@
       </div>
     </div>
     <div class="extension" id="opera-extension">
-      <div class="extension-image-container">
+      <div class="extension-image-container container">
         <img src="./images/logo-opera.svg" alt="image of opera browser logo>
       </div>
       <div class="extension-title-container">
@@ -307,5 +321,6 @@
       Coded by <a href="#">Your Name Here</a>.
     </p>
   </footer>
+  <script src="responsiveNavBar.js"></script>
 </body>
 </html>
