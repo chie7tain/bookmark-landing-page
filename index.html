@@ -12,6 +12,7 @@
 <!--end of font awesome  -->
 <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
 <!-- styles -->
+<link rel="stylesheet" href="normalize.css">
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="./styles/mobile.css">
 <link rel="stylesheet" href="./styles/tablet.css">
@@ -41,10 +42,10 @@
         </div>
         <button class="login-btn nav-link"><a href="#">login</a></button>
         <div class="social-links-container-nav">
-          <span class="social-link-nav">
+          <span class="social-link-nav nav-link">
             <i class="fab fa-facebook-square"></i>
           </span>
-          <span class="social-link-nav">
+          <span class="social-link-nav nav-link">
             <i class="fab fa-twitter"></i>
           </span>
         </div>
@@ -101,9 +102,9 @@
       <div id="tab-content-container">
         <!-- simple bookmarking feature content -->
         <div class="content" id="simple-bookmark">
-          <div class="desktop-image-and-background-container container">
-            <img src="./images/illustration-features-tab-1.svg" alt="features image one" class="illustration-img image">
-            <div class="feature-image-background"></div>
+          <div class="desktop-image-and-background-container container" id="illustration-feature-image-container-one">
+            <img src="./images/illustration-features-tab-1.svg" alt="features image one" class="illustration-img-one image">
+            <div class="feature-image-background-one"></div>
           </div>
           <!-- ============== -->
           <div class="features-banner-container">
@@ -111,14 +112,16 @@
             <p class="feature-text">
               Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.
             </p>
-            <button class="feature-btn">More Info</button>
+            <div class="more-info-btn-container">
+              <button class="more-info-feature-btn">More Info</button>
+            </div>
           </div>
         </div>
         <!-- Speedy searching feature -->
         <div class="content" id="speedy-searching">
-          <div class="desktop-image-and-background-container container">
-            <img src="./images/illustration-features-tab-2.svg" alt="features image two" class="illustration-img image">
-            <div class="image-background feature"></div>
+          <div class="desktop-image-and-background-container container" id="illustration-image-and-background-container-two">
+            <img src="./images/illustration-features-tab-2.svg" alt="features image two" class="illustration-img-two image">
+            <div class="illustration-image-background-two"></div>
           </div>
           <!-- ============== -->
           <div class="features-banner-container">
@@ -126,14 +129,16 @@
             <p class="feature-text">
               Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.
             </p>
-            <button class="feature-btn">More Info</button>
+            <div class="more-info-btn-container">
+              <button class="more-info-feature-btn">More Info</button>
+            </div>
           </div>
         </div>
 <!-- Easy Sharing feature-->
         <div class="content" id="easy-sharing">
-          <div class="desktop-image-and-background-container container">
-            <img src="./images/illustration-features-tab-3.svg" alt="features image one" class="illustration-img image">
-            <div class="image-background feature"></div>
+          <div class="desktop-image-and-background-container container" id="illustration-image-and-background-container-three">
+            <img src="./images/illustration-features-tab-3.svg" alt="features image one" class="illustration-image-three image">
+            <div class="feature-image-background-three "></div>
           </div>
           <!-- ============== -->
           <div class="features-banner-container">
@@ -141,29 +146,34 @@
             <p class="feature-text">
               Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.
             </p>
-            <button class="feature-btn">More Info</button>
+            <div class="more-info-btn-container">
+              <button class="more-info-feature-btn">More Info</button>
+            </div>
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
 <!-- end of features section  -->
 <!-- ============================= -->
 <!-- downloan extension container -->
-<section class="download-extention-section">
-  <h2 class="download-extension-heading">Download the extension</h2>
-  <p class="download-extension-container-text">
-    We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to priotize.
-  </p>
+<section class="download-extension-section container">
+  <div class="download-extension-banner-container container">
+    <h2 class="download-extension-banner-heading">Download the extension</h2>
+    <p class="download-extension-banner-text">
+      We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to priotize.
+    </p>
+  </div>
   <div class="extensions-container">
     <div class="extension" id="chrome-extension">
       <div class="extension-image-container container">
-        <img src="./images/logo-chrome.svg" alt="image of chrome browser logo>
+        <img src="./images/logo-chrome.svg" alt="image of chrome browser logo">
       </div>
       <div class="extension-title-container">
         <h3 class="extension-title">Add to Chrome</h3>
         <p class="extension-version">Minimum version 62</p>
       </div>
       <div class="add-extension-btn-container">
+        <img src="./images/bg-dots.svg" alt="image of dots" class="image-of-dots">
         <button class="add-extension-btn">
           Add & Install Extension
         </button>
@@ -171,13 +181,14 @@
     </div>
     <div class="extension" id="firefox-extension">
       <div class="extension-image-container container">
-        <img src="./images/logo-firefox.svg" alt="image of firefox browser logo>
+        <img src="./images/logo-firefox.svg" alt="image of firefox browser logo">
       </div>
       <div class="extension-title-container">
         <h3 class="extension-title">Add to Firefox</h3>
         <p class="extension-version">Minimum version 55</p>
       </div>
       <div class="add-extension-btn-container">
+        <img src="./images/bg-dots.svg" alt="image of dots"  class="image-of-dots">
         <button class="add-extension-btn">
           Add & Install Extension
         </button>
@@ -185,13 +196,14 @@
     </div>
     <div class="extension" id="opera-extension">
       <div class="extension-image-container container">
-        <img src="./images/logo-opera.svg" alt="image of opera browser logo>
+        <img src="./images/logo-opera.svg" alt="image of opera browser logo">
       </div>
       <div class="extension-title-container">
         <h3 class="extension-title">Add to Opera</h3>
         <p class="extension-version">Minimum version 46</p>
       </div>
       <div class="add-extension-btn-container">
+        <img src="./images/bg-dots.svg" alt="image of dots"  class="image-of-dots">
         <button class="add-extension-btn">
           Add & Install Extension
         </button>
@@ -261,8 +273,8 @@
       </p>
     </div>
   </div>
-  <div class="more-info-btn-container">
-    <button class="more-info-btn">More Info</button>
+  <div class="more-info-btn-container-faq">
+    <button class="more-info-btn-faq">More Info</button>
   </div>
 </section>
 <!-- end of FAQ section -->
@@ -277,15 +289,15 @@
       </h4>
     </div>
     <form action="" class="contact-us-form">
-      <input type="text" placeholder="example@email.com">
+      <input type="text" placeholder="example@email.com" class="email-input">
       <div class="contact-us-btn-container">
         <button class="contact-us-btn">Contact Us</button>
       </div>
     </form>
   </div>
   <div class="footer-links-container">
-    <div class="footer-logo">
-      <img src="./images/logo-bookmark.svg" alt="company logo">
+    <div class="logo-container-footer">
+      <img src="./images/logo-bookmark.svg" alt="company logo" class="logo-img">
     </div>
     <div class="links-container">
       <div class="footer-link">
@@ -318,7 +330,7 @@
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="#">Chie7tain</a>.
     </p>
   </footer>
   <script src="responsiveNavBar.js"></script>
