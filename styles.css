@@ -1,11 +1,12 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
 
-/* default browser reset  */
+    /* default browser reset  */
 *{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+margin:0;
+padding:0;
+box-sizing: border-box;
+font-family: 'Rubik', sans-serif;
 }
 /* end of default browser reset */
 /* ======================== */
@@ -21,6 +22,7 @@
 --mainWhite:#f5f5f5;
 --mainSpacing:0.1rem;
  --mainTransition:all 0.2s ease-in;
+ --borderRadius:border-radius: 6px;
 }
 /* end of main colors  */
 /* html scroll behaviour  */
@@ -29,12 +31,11 @@ html{
 }
 /* styles for body */
 body{
-    font-family: 'Rubik', sans-serif;
     overflow-x: hidden;
 }
 .nav-link a {
     text-decoration:none;
-    color:var(--mainWhite);
+    /* color:var(--mainWhite); */
     text-transform: uppercase;
     letter-spacing:var(--mainSpacing);
 }
@@ -56,7 +57,7 @@ body{
     width:100%;
 }
 /* styles for burger responsive nav bar button  and responsive nav bar*/
-.burger{
+/* .burger{
     width:40px;
     height:27px;
     display: flex;
@@ -81,28 +82,27 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: space-evenly; */
     height:100vh;
     background:var(--veryDarkBlue);
     transform:translateX(100%);
     transition:var(--mainTransition);
     opacity: 0.9;
     margin:auto;
-}
-.nav-link{
+} */
+/* .nav-link{
     width:90%;
     display: flex;
     justify-content: center;
     padding:1em;
 
-}
+} */
 /* this style helps to give a nice looking border color styling to the navlinks */
-.seperate-border{
+/* .seperate-border{
     border-top:1px solid var(--grayishBlue);
     border-bottom:1px solid var(--grayishBlue);
     margin:9px auto;
-}
-.login-btn{
+} */
+/* .login-btn{
     padding:1em 1em;
     width:90%;
     background:var(--veryDarkBlue);
@@ -112,21 +112,21 @@ body{
     letter-spacing: var(--mainSpacing);
     margin:7px auto;
 
-}
-.login-btn a{
+} */
+/* .login-btn a{
  color:var(--mainWhite);
  text-decoration:none;
  font-weight: 500;
 }
 .navigation .nav-link {
  opacity: 0;
-}
+} */
 /* this style translates the navigation bar back to 0 or back on the display */
-.nav-active{
+/* .nav-active{
     transform:translateX(0%);
-}
+} */
 /* this style creates an animation to animate the nav links as they come back on the screen when the burger button is clicked */
-@keyframes navLinkFade{
+/* @keyframes navLinkFade{
     from{
         opacity: 0;
         transform:translateX(50px);
@@ -135,9 +135,9 @@ body{
         opacity: 1;
         transform: translateX(0px);
     }
-}
+} */
 /* this line aids in the animated toggle of the burger toggle button lines */
-.toggle .line1{
+/* .toggle .line1{
     transform:rotate(-45deg) translate(-5px,6px);
 }
 .toggle .line2{
@@ -145,7 +145,7 @@ body{
 }
 .toggle .line3{
     transform: rotate(45deg) translate(-5px,-6px);
-}
+} */
 /* styls for login button */
 /* end of styles for responsive nav bar */
 

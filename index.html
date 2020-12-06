@@ -40,7 +40,7 @@
         <div class="nav-link seperate-border">
           <a href="#contact">contact</a>
         </div>
-        <button class="login-btn nav-link"><a href="#">login</a></button>
+        <button class="login-btn nav-link">login</button>
         <div class="social-links-container-nav">
           <span class="social-link-nav nav-link">
             <i class="fab fa-facebook-square"></i>
@@ -59,6 +59,7 @@
     </nav>
     <!-- end of nav bar -->
     <!-- =========================== -->
+    <div class="content">
     <!-- hero section-->
     <section class="hero-and-hero-background-image-section">
       <div class="hero-container">
@@ -93,61 +94,61 @@
         </p>
       </div>
       <div class="features-tab-container">
-        <div class="tab-link"><span class="tab">
+        <div class="tab-link"><span class="tab tab-heading">
           Simple Bookmarking
         </span></div>
-        <div class="tab-link"><span class="tab">Speedy Searching</span></div>
-        <div class="tab-link"><span class="tab">Easy Sharing</span></div>
+        <div class="tab-link"><span class="tab tab-heading">Speedy Searching</span></div>
+        <div class="tab-link"><span class="tab tab-heading">Easy Sharing</span></div>
       </div>
       <div id="tab-content-container">
         <!-- simple bookmarking feature content -->
-        <div class="content" id="simple-bookmark">
-          <div class="desktop-image-and-background-container container" id="illustration-feature-image-container-one">
-            <img src="./images/illustration-features-tab-1.svg" alt="features image one" class="illustration-img-one image">
-            <div class="feature-image-background-one"></div>
+        <div class="content tab-item" id="simple-bookmark">
+          <div class="desktop-image-and-background-container container illustration" id="illustration-feature-image-container-one">
+            <img src="./images/illustration-features-tab-1.svg" alt="features image one" class="illustration-img-one image illus-image">
+            <div class="feature-image-background-one f-image-background"></div>
           </div>
           <!-- ============== -->
-          <div class="features-banner-container">
-            <h2 class="feature-heading">Bookmark in one click</h2>
-            <p class="feature-text">
+          <div class="features-banner-container f-banner-container">
+            <h2 class="feature-heading f-heading">Bookmark in one click</h2>
+            <p class="feature-text f-text">
               Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.
             </p>
             <div class="more-info-btn-container">
-              <button class="more-info-feature-btn">More Info</button>
+              <button class="more-info-feature-btn btn">More Info</button>
             </div>
           </div>
         </div>
         <!-- Speedy searching feature -->
-        <div class="content" id="speedy-searching">
-          <div class="desktop-image-and-background-container container" id="illustration-image-and-background-container-two">
-            <img src="./images/illustration-features-tab-2.svg" alt="features image two" class="illustration-img-two image">
-            <div class="illustration-image-background-two"></div>
+        <div class="content tab-item" id="speedy-searching">
+          <div class="desktop-image-and-background-container container illustration" id="illustration-image-and-background-container-two">
+            <img src="./images/illustration-features-tab-2.svg" alt="features image two" class="illustration-img-two image illus-image">
+            <div class="illustration-image-background-two f-image-background"></div>
           </div>
           <!-- ============== -->
           <div class="features-banner-container">
-            <h2 class="feature-heading">Search Efficiently</h2>
-            <p class="feature-text">
+            <h2 class="feature-heading f-heading">Search Efficiently</h2>
+            <p class="feature-text f-text">
               Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.
             </p>
             <div class="more-info-btn-container">
-              <button class="more-info-feature-btn">More Info</button>
+              <button class="more-info-feature-btn btn">More Info</button>
             </div>
           </div>
         </div>
 <!-- Easy Sharing feature-->
-        <div class="content" id="easy-sharing">
-          <div class="desktop-image-and-background-container container" id="illustration-image-and-background-container-three">
-            <img src="./images/illustration-features-tab-3.svg" alt="features image one" class="illustration-image-three image">
-            <div class="feature-image-background-three "></div>
+        <div class="content tab-item" id="easy-sharing">
+          <div class="desktop-image-and-background-container container illustration" id="illustration-image-and-background-container-three">
+            <img src="./images/illustration-features-tab-3.svg" alt="features image one" class="illustration-image-three image illus-image">
+            <div class="feature-image-background-three f-image-background "></div>
           </div>
           <!-- ============== -->
-          <div class="features-banner-container">
-            <h2 class="feature-heading">Easy Sharing</h2>
-            <p class="feature-text">
+          <div class="features-banner-container f-banner-container">
+            <h2 class="feature-heading f-heading">Easy Sharing</h2>
+            <p class="feature-text f-text">
               Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.
             </p>
             <div class="more-info-btn-container">
-              <button class="more-info-feature-btn">More Info</button>
+              <button class="more-info-feature-btn btn">More Info</button>
             </div>
           </div>
         </div>
@@ -279,6 +280,7 @@
 </section>
 <!-- end of FAQ section -->
 <!-- ==================================== -->
+</div>
 <!-- footer section -->
 <section class="footer-section">
   <div class="contact-us-container">
@@ -330,9 +332,11 @@
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Chie7tain</a>.
+      Coded by <a href="https://chie7tain.netlify.app" target="_blank">Chie7tain</a>.
     </p>
   </footer>
   <script src="responsiveNavBar.js"></script>
+  <script src="stickyNav.js"></script>
+  <script src="tabs.js"></script>
 </body>
 </html>
